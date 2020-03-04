@@ -13,11 +13,11 @@ products:
 - azure-api-apps
 - vs-code
 - azure-sql-database
-description: "Using Azure SQL Change Tracking API to data between Apps and the Cloud"
+description: "Using Change Tracking API to sync data between Apps and the Cloud"
 urlFragment: "azure-sql-db-dotnet-rest-api"
 ---
 
-# "Using Azure SQL Change Tracking API to data between Apps and the Cloud
+# "Using Change Tracking API to sync data between Apps and the Cloud
 
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
