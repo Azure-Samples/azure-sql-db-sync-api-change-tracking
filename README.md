@@ -17,7 +17,7 @@ description: "Using Change Tracking API to sync data between Apps and the Cloud"
 urlFragment: "azure-sql-db-dotnet-rest-api"
 ---
 
-# "Using Change Tracking API to sync data between Apps and the Cloud
+# Using Change Tracking API to sync data between Apps and the Cloud
 
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
