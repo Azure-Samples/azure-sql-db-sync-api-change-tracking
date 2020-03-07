@@ -62,9 +62,7 @@ With Azure SQL you can take advantage of [Change Tracking](https://docs.microsof
 
 Well, more precisely, not only you can detect the changes, but you can also generate the JSON directly from Azure SQL, so that you can take advantage of the amazing integration that Azure SQL provides across all its features and create a beautifully simple code.
 
-More technical details will be soon available on:
-
-https://techcommunity.microsoft.com/t5/azure-sql-database/bg-p/Azure-SQL-Database 
+More technical details is available here: [Sync Mobile Apps with Azure using Change Tracking API ](https://techcommunity.microsoft.com/t5/azure-sql-database/sync-mobile-apps-with-azure-using-change-tracking-api/ba-p/1213993)
 
 ## Create an empty database
 
