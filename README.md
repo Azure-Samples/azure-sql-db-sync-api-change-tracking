@@ -65,7 +65,8 @@ Well, more precisely, not only you can detect the changes, but you can also gene
 More technical details are available here: [Sync Mobile Apps with Azure using Change Tracking API ](https://techcommunity.microsoft.com/t5/azure-sql-database/sync-mobile-apps-with-azure-using-change-tracking-api/ba-p/1213993)
 
 I've also prepared a video to show in 10 minutes how much simpler can be your life using Change Tracking API.
-[![Alt text](https://img.youtube.com/vi/c1BmNruu6wc/0.jpg)](https://www.youtube.com/watch?v=c1BmNruu6wc)
+
+[![Azure SQL Change Tracking API in Action](https://img.youtube.com/vi/c1BmNruu6wc/0.jpg)](https://www.youtube.com/watch?v=c1BmNruu6wc)
 
 ## Create an empty database
 
