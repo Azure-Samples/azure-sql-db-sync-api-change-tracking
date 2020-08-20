@@ -66,7 +66,7 @@ More technical details are available here: [Sync Mobile Apps with Azure using Ch
 
 I've also prepared a video to show in 10 minutes how much simpler can be your life using Change Tracking API.
 
-[![Azure SQL Change Tracking API in Action](https://img.youtube.com/vi/c1BmNruu6wc/0.jpg)](https://www.youtube.com/watch?v=c1BmNruu6wc)
+![Azure SQL Change Tracking API in Action](https://img.youtube.com/vi/c1BmNruu6wc/0.jpg)](https://www.youtube.com/watch?v=c1BmNruu6wc)
 
 ## Create an empty database
 
@@ -92,7 +92,7 @@ Once the database is created, you can connect to it using [Azure Data Studio](ht
 
 ## Add Database Objects
 
-Once the database has been create, you need to enable change tracking and add a stored procedure that will called from .NET. The SQL code is available here:
+Once the database has been created, you need to enable change tracking and add a stored procedure that will called from .NET. The SQL code is available here:
 
 - `./SQL/01-change-tracking-setup.sql`
 - `./SQL/02-stored-procedure.sql`
