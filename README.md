@@ -1,12 +1,12 @@
 ---
 page_type: sample
 languages:
+- aspx-csharp
 - tsql
 - sql
-- aspx-csharp
 products:
 - azure
-- donet
+- dotnet
 - aspnet
 - dotnet-core
 - aspnet-core
