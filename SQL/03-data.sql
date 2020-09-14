@@ -1,3 +1,6 @@
+/*
+    Insert some "pre-existing" data
+*/
 insert into dbo.TrainingSession 
     (RecordedOn, [Type], Steps, Distance, Duration, Calories)
 values 
@@ -5,6 +8,15 @@ values
     ('20191027 17:54:48 -08:00', 'Run', 0, 4981, 32*60+37, 480)
 go
 
+/*
+    View Data
+*/
+select * from dbo.TrainingSession
+go
+
+/*
+    Make some changes
+*/
 insert into dbo.TrainingSession 
     (RecordedOn, [Type], Steps, Distance, Duration, Calories)
 values 
@@ -16,4 +28,9 @@ update
 set 
     Steps = 3450
 where 
-    Id = 10
+    Id = 13 -- Make sure to select an if returned by previous rows
+
+/*
+    Delete someting
+*/
+delete from dbo.TrainingSession where Id = 12
