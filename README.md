@@ -4,6 +4,7 @@ languages:
 - aspx-csharp
 - tsql
 - sql
+- json
 products:
 - azure
 - dotnet
@@ -18,6 +19,8 @@ urlFragment: "azure-sql-db-dotnet-rest-api"
 ---
 
 # Using Change Tracking API to sync data between Apps and the Cloud
+
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
