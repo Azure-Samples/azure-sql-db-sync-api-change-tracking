@@ -10,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 namespace AzureSamples.AzureSQL.Controllers
 {
     [ApiController]
-    [Route("trainingsession/sync")]
+    [Route("/api/v1/training-session/sync")]
     public class TrainingSessionSyncController : ControllerQuery
     {
         public TrainingSessionSyncController(IConfiguration config, ILogger<TrainingSessionSyncController> logger):
