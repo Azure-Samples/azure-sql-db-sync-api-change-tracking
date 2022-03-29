@@ -35,6 +35,7 @@ begin tran
             [Data] = json_query((
                 select 
                     ct.SYS_CHANGE_OPERATION as '$operation',
+                    ct.SYS_CHANGE_VERSION as '$version',
                     ct.Id, 
                     ts.RecordedOn,
                     ts.[Type], 
