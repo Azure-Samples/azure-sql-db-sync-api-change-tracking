@@ -10,7 +10,7 @@ begin tran
     declare @reason int
 
     declare @curVer int = change_tracking_current_version();
-    declare @minVer int = change_tracking_min_valid_version(object_id('dbo.TrainingSession'));
+    declare @minVer int = change_tracking_min_valid_version(object_id('dbo.TrainingSessions'));
 
     if (@fromVersion = 0) begin
         set @reason = 0 -- First Sync
@@ -25,7 +25,7 @@ begin tran
             @curVer as 'Metadata.Sync.Version',
             'Full' as 'Metadata.Sync.Type',
             @reason as 'Metadata.Sync.ReasonCode',
-            [Data] = json_query((select Id, RecordedOn, [Type], Steps, Distance from dbo.TrainingSession for json auto))
+            [Data] = json_query((select Id, RecordedOn, [Type], Steps, Distance from dbo.TrainingSessions for json auto))
         for
             json path, without_array_wrapper
     end else begin
@@ -45,9 +45,9 @@ begin tran
                     ts.AdjustedSteps,
                     ts.AdjustedDistance
                 from 
-                    dbo.TrainingSession as ts 
+                    dbo.TrainingSessions as ts 
                 right outer join 
-                    changetable(changes dbo.TrainingSession, @fromVersion) as ct on ct.[Id] = ts.[id]
+                    changetable(changes dbo.TrainingSessions, @fromVersion) as ct on ct.[Id] = ts.[id]
                 for 
                     json path
             ))

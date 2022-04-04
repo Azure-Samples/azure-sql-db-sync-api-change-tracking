@@ -19,8 +19,8 @@ begin
 end
 go
 
-drop table if exists dbo.TrainingSession;
-create table dbo.TrainingSession
+drop table if exists dbo.TrainingSessions;
+create table dbo.TrainingSessions
 (
     [Id] int primary key not null default(next value for dbo.Ids),
     [RecordedOn] datetimeoffset not null,
@@ -43,9 +43,9 @@ begin
 end
 go
 
-if not exists(select * from sys.change_tracking_tables where [object_id]=object_id('dbo.TrainingSession'))
+if not exists(select * from sys.change_tracking_tables where [object_id]=object_id('dbo.TrainingSessions'))
 begin
-    alter table dbo.TrainingSession
+    alter table dbo.TrainingSessions
     enable change_tracking
 end
 go
