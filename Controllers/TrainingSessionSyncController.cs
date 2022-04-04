@@ -10,16 +10,16 @@ using Microsoft.Extensions.Configuration;
 namespace AzureSamples.AzureSQL.Controllers
 {
     [ApiController]
-    [Route("/api/v1/training-session/sync")]
+    [Route("/api/v1/training-session/sync/{versionId?}")]
     public class TrainingSessionSyncController : ControllerQuery
     {
         public TrainingSessionSyncController(IConfiguration config, ILogger<TrainingSessionSyncController> logger):
             base(config, logger) {}
 
-        public async Task<JsonElement> Get()
+        public async Task<JsonElement> Get(int? versionId)
         {
             var clientId = HttpContext.Request.Headers["ClientId"].FirstOrDefault();
-            var fromVersion = Int32.Parse(HttpContext.Request.Headers["FromVersion"].FirstOrDefault() ?? "0");
+            var fromVersion = versionId.HasValue ? versionId.Value : 0;
 
             var payload = new {
                 clientId = clientId,
