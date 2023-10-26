@@ -9,9 +9,8 @@ products:
 - azure
 - dotnet
 - aspnet
-- dotnet-core
 - aspnet-core
-- azure-api-apps
+- azure-app-service
 - vs-code
 - azure-sql-database
 description: "Using Change Tracking API to sync data between Apps and the Cloud"
